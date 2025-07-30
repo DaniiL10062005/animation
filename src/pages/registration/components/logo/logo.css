@@ -1,0 +1,75 @@
+.logo {
+  height: 100vh;
+  flex: 1;
+  background: linear-gradient(to right, #cb9850, #61a0ff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-inline: 5rem;
+}
+
+img {
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 100%;
+}
+
+p {
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.logo-animation-start {
+  animation: logo-animation-start 3s ease 0.2s forwards,
+    logo-animation 4s ease-in-out 3.5s infinite alternate;
+  rotate: 45deg;
+}
+
+@keyframes logo-animation-start {
+  from {
+    rotate: 45deg;
+  }
+  to {
+    rotate: -5deg;
+  }
+}
+
+@keyframes logo-animation {
+  from {
+    rotate: -5deg;
+  }
+  to {
+    rotate: 5deg;
+  }
+}
+
+.block-animation {
+  animation: block-animation 2s ease 0.2s forwards;
+  flex: 2;
+}
+
+@keyframes block-animation {
+  from {
+    flex: 2;
+  }
+  to {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    padding-inline: 2rem;
+  }
+
+  img {
+    max-height: 200px;
+  }
+
+  p {
+    font-size: 3rem;
+  }
+}

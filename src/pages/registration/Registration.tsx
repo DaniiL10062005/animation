@@ -1,5 +1,11 @@
+import { Authorization, Logo } from './components'
+import './registration.css'
+
 export const Registration = () => {
   return (
-    <div>Registration</div>
+    <div className="main-container">
+      <Logo />
+      <Authorization />
+    </div>
   )
 }
