@@ -7,19 +7,91 @@
   border-radius: 1rem;
   margin-inline: 5rem;
   padding: 2rem;
+  width: 60%;
+  text-align: center;
+  border: 1px solid #929292;
+}
+.form p {
+  font-weight: 300;
+}
+.form-clue {
+  border-bottom: 1px solid rgb(89, 130, 177);
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.authorization-input {
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  border-color: rgb(89, 130, 177);
+  border-width: 1px;
+  border-style: solid;
+  font-size: 16px;
+  font-weight: 100;
+}
+.authorization-input:focus {
+  outline: none;
+  border-color: rgb(89, 130, 177);
+  box-shadow: 0 0 5px rgba(89, 130, 177, 0.5);
+}
+.authorization-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.authorization-button {
+  background-color: rgb(89, 130, 177);
+  font-size: 16px;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.authorization-button:hover {
+  background-color: rgb(70, 110, 150);
+}
+.authorization-button:focus {
+  outline: none;
+}
+.authorization-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.validation-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 0.5rem;
+  font-weight: 300;
 }
 
 .form-animation {
   opacity: 0;
   animation: form-animation 1s ease-out 3s forwards;
+  position: absolute;
 }
 @keyframes form-animation {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(-10px);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    min-width: 80%;
+    padding: 1rem;
+  }
+  .form p {
+    font-size: 16px;
   }
 }

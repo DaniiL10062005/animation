@@ -1,25 +1,43 @@
 .logo {
-  height: 100vh;
-  flex: 1;
   background: linear-gradient(to right, #cb9850, #61a0ff);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
-  padding-inline: 5rem;
+  padding-inline: 1rem;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-img {
-  max-height: 500px;
-  object-fit: contain;
+.logo img {
+  height: auto;
+  width: auto;
+  max-height: 400px;
+  max-width: 100%;
   border-radius: 100%;
 }
 
-p {
+.logo-p {
   font-size: 5rem;
   text-align: center;
   font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.text-animation {
+  animation: text-animation 1s ease-in-out 3s forwards;
+  opacity: 0;
+}
+@keyframes text-animation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .logo-animation-start {
@@ -48,28 +66,47 @@ p {
 
 .block-animation {
   animation: block-animation 2s ease 0.2s forwards;
-  flex: 2;
+  width: 75vw;
 }
 
 @keyframes block-animation {
   from {
-    flex: 2;
+    width: 75vw;
   }
   to {
-    flex: 1;
+    width: 50vw;
   }
 }
 
 @media screen and (max-width: 768px) {
   .logo {
     padding-inline: 2rem;
+    width: auto;
+    background: linear-gradient(to bottom, #cb9850, #61a0ff);
   }
 
   img {
     max-height: 200px;
   }
 
-  p {
-    font-size: 3rem;
+  .logo-p {
+    font-size: 2rem;
+  }
+  .block-animation {
+    animation: block-animation 2s ease 0.2s forwards;
+    flex: none;
+    height: 75vh;
+  }
+  @keyframes block-animation {
+    from {
+      flex: none;
+      height: 75vh;
+      width: auto;
+    }
+    to {
+      flex: none;
+      height: 50vh;
+      width: auto;
+    }
   }
 }

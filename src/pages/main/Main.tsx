@@ -1,3 +1,30 @@
+import { useEffect } from 'react'
+import { useSelector } from 'react-redux'
+import type { RootState } from '../../store'
+import { useNavigate } from 'react-router-dom'
+import './main.css'
+import { AboutMeBlock, Contacts, MyStackBlock } from './components'
+
 export const Main = () => {
-  return <div>main</div>
+  const { name } = useSelector((state: RootState) => state.user)
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if (name === null || name === '') {
+      navigate('/registration')
+    }
+  }, [])
+
+  return (
+    <div className="main">
+      <p className="welcome-message welcome-message-animation">
+        Добро пожаловать на мой сайт, {name}!
+      </p>
+      <div className="main-container main-content-animation">
+        <AboutMeBlock />
+        <MyStackBlock />
+        <Contacts />
+      </div>
+    </div>
+  )
 }

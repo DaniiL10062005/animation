@@ -1,0 +1,47 @@
+.contacts-block {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid #929292;
+  height: auto;
+  padding: 1rem;
+}
+
+.contacts-block p,
+a {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 20px;
+  color: #343434;
+  text-align: center;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.contacts-block img {
+  width: 50px;
+  height: 50px;
+}
+.contacts-block div {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .contacts-block {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .contacts-block p,
+  a {
+    font-size: 12px;
+    padding: 10px;
+    margin: 0;
+  }
+  .contacts-block img {
+    width: 40px;
+    height: 40px;
+  }
+}

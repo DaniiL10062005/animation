@@ -3,7 +3,7 @@ import './registration.css'
 
 export const Registration = () => {
   return (
-    <div className="main-container">
+    <div className="registration-container">
       <Logo />
       <Authorization />
     </div>
