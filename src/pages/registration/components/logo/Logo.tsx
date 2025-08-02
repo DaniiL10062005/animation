@@ -11,9 +11,6 @@ export const Logo = () => {
         src="/images/hand.png"
         alt="Logo"
       />
-      {/* <p className="logo-animation-start logo-animation" style={{ fontSize: '20rem', margin: '0' }}>
-        &#9995;
-      </p> */}
       <p className="text-animation logo-p">Привет, {name}</p>
     </div>
   )
