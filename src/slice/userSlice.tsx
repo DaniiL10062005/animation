@@ -1,13 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { UserSlice } from './types'
 
-const initalState: UserSlice = {
+const initialState: UserSlice = {
   name: localStorage.getItem('name') || null,
 }
 
 export const userSlice = createSlice({
   name: 'user',
-  initialState: initalState,
+  initialState: initialState,
   reducers: {
     setName: (state, action) => {
       state.name = action.payload
