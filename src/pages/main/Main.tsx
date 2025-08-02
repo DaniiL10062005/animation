@@ -12,7 +12,7 @@ export const Main = () => {
 
   useEffect(() => {
     if (name === null || name === '') {
-      navigate('/registration')
+      navigate('registration')
     }
   }, [])
 
