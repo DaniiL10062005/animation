@@ -11,7 +11,7 @@ export const MyProjects = () => {
           <img
             title="Ниже указаны самые крупные и значимые проекты в которых я принимал участие"
             className="info-icon"
-            src="/src/assets/information.png"
+            src="/public/images/information.png"
             alt="info"
           />
         </p>

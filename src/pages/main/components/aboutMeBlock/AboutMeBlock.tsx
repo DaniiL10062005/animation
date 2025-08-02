@@ -5,7 +5,7 @@ export const AboutMeBlock = () => {
   return (
     <Block className="about-me-block">
       <div className="photo-and-fullname">
-        <img className="about-me-photo" src="/src/assets/myPhoto.png" alt="Мое фото" />
+        <img className="about-me-photo" src="/public/images/myPhoto.png" alt="Мое фото" />
         <div>
           <p className="fullname">Рубан Даниил Андреевич</p>
           <p className="profession">Frontend-разработчик</p>
