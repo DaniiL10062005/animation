@@ -3,11 +3,11 @@ import { Main, Registration } from '../pages/index'
 
 export const router = createBrowserRouter([
   {
-    path: 'registration',
+    path: '/registration',
     element: <Registration />,
   },
   {
-    path: '',
+    path: '/',
     element: <Main />,
   },
 ])
