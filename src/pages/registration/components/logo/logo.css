@@ -46,10 +46,6 @@
     logo-animation 2s ease-in-out 3.5s infinite alternate;
   rotate: 75deg;
 }
-.logo-picture {
-  font-size: 20rem;
-  margin: 0;
-}
 
 @keyframes logo-animation-start {
   from {
