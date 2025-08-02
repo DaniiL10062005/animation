@@ -30,11 +30,13 @@ export const Form = () => {
   const watcher = watch('name')
 
   useEffect(() => {
-    dispatch(setName(getValues('name')))
+    const userName = getValues('name')
+    dispatch(setName(userName))
   }, [watcher])
 
   const onSubmit = () => {
-    localStorage.setItem('name', getValues('name'))
+    const userName = getValues('name')
+    localStorage.setItem('name', userName)
     navigate('/')
   }
 

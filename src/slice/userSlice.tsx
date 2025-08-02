@@ -3,8 +3,6 @@ import type { UserSlice } from './types'
 
 const initalState: UserSlice = {
   name: localStorage.getItem('name') || null,
-  setName: () => {},
-  deleteName: () => {},
 }
 
 export const userSlice = createSlice({
