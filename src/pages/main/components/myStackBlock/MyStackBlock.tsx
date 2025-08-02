@@ -1,8 +1,9 @@
+import { Block } from '../../../../shared'
 import './myStackBlock.css'
 
 export const MyStackBlock = () => {
   return (
-    <div className="my-stack-block">
+    <Block className="my-stack-block">
       <p className="header">Мой стек технологий</p>
       <div className="stack-container react">
         <img src="/src/assets/react.png" alt="React" className="stack-image" />
@@ -30,6 +31,6 @@ export const MyStackBlock = () => {
         <img src="/src/assets/postgresql.png" alt="PostgreSQL" className="stack-image" />
         <p>PostgreSQL</p>
       </div>
-    </div>
+    </Block>
   )
 }

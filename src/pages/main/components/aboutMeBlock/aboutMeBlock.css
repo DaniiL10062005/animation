@@ -1,12 +1,4 @@
 .about-me-block {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding: 20px;
-  background-color: white;
-  border-radius: 1rem;
-  border: 1px solid #929292;
-  height: auto;
   gap: 1rem;
 }
 .about-me-photo {

@@ -1,0 +1,33 @@
+.projects-block {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+.info-icon {
+  width: 20px;
+  height: 20px;
+}
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.company-link {
+  font-size: 22px;
+  font-weight: 400;
+  color: #343434;
+  text-align: start;
+  margin: 16px 0;
+  text-decoration: none;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .projects-block {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .company-link {
+    font-size: 16px;
+  }
+}

@@ -1,8 +1,9 @@
+import { Block } from '../../../../shared'
 import './aboutMeBlock.css'
 
 export const AboutMeBlock = () => {
   return (
-    <div className="about-me-block ">
+    <Block className="about-me-block">
       <div className="photo-and-fullname">
         <img className="about-me-photo" src="/src/assets/myPhoto.png" alt="Мое фото" />
         <div>
@@ -17,6 +18,6 @@ export const AboutMeBlock = () => {
         Имею упорство, целеустремленность, честность и хорошие коммуникативные навыки, что позволяет
         быстро и четко решать задачи как самостоятельно, так и в команде.
       </p>
-    </div>
+    </Block>
   )
 }

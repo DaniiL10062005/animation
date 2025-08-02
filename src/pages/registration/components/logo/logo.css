@@ -23,6 +23,7 @@
   text-align: center;
   font-weight: 300;
   margin-bottom: 2rem;
+  margin-top: 0.5rem;
 }
 
 .text-animation {
@@ -42,25 +43,29 @@
 
 .logo-animation-start {
   animation: logo-animation-start 3s ease 0.2s forwards,
-    logo-animation 4s ease-in-out 3.5s infinite alternate;
-  rotate: 45deg;
+    logo-animation 2s ease-in-out 3.5s infinite alternate;
+  rotate: 75deg;
+}
+.logo-picture {
+  font-size: 20rem;
+  margin: 0;
 }
 
 @keyframes logo-animation-start {
   from {
-    rotate: 45deg;
+    rotate: 75deg;
   }
   to {
-    rotate: -5deg;
+    rotate: -15deg;
   }
 }
 
 @keyframes logo-animation {
   from {
-    rotate: -5deg;
+    rotate: -15deg;
   }
   to {
-    rotate: 5deg;
+    rotate: 15deg;
   }
 }
 
@@ -108,5 +113,9 @@
       height: 50vh;
       width: auto;
     }
+  }
+  .logo-picture {
+    font-size: 10rem;
+    margin: 0;
   }
 }
