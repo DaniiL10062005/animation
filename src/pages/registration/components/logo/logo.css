@@ -86,7 +86,7 @@
     background: linear-gradient(to bottom, #cb9850, #61a0ff);
   }
 
-  img {
+  .logo img {
     max-height: 200px;
   }
 
